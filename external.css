@@ -1,0 +1,975 @@
+/*STYLING GENERAL ELEMENTS*/
+
+body {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  /* Space between sections */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: black;
+}
+
+p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.container-fluid {
+  padding: 0%;
+  margin: 0%;
+  position: relative;
+} 
+
+/*STYLING NAV BAR*/
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: color #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#navContainer {
+  background-color: #000; /*this fixed the issue of background colour on entire nav bar*/
+}
+
+.sideNav .closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {padding-top: 15px;}
+  .sideNav a {font-size: 18px;}
+}
+
+#logo {
+  float: left;
+  width: 30%;
+  height: auto;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  padding: 0;
+}
+
+/*STYLING CAROUSEL*/
+
+.carousel .item {
+  height: auto;
+}
+
+#carImg1, #carImg2, #carImg3 {
+  width: 50%;
+  height: auto;
+  margin: auto;  /*Stack OF for centering image*/
+}
+
+.glyphicon glyphicon-user {
+  margin-right: 2%;
+}
+
+/*SUBSCRIPTION STYLING - RONALD*/
+
+#Subscribtion {
+  background-image: linear-gradient(to right top, #a4abb5, #a5b1bc, #a4b7c2, #a4bec7, #a4c4cb);
+  color: #ffffff;
+  padding-bottom: 2.5%;
+  padding-top: 1.5%;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.susc-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 30px;
+  border: 4px solid;
+  padding: .5%;
+  font-size: large;
+  margin-top: 1.5%;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.susc-btn:hover {
+  box-shadow: inset 800px 0 0 0 #3e737d;
+  columns: whitesmoke;
+  border-color: whitesmoke;
+  border-radius: 30px;
+  border: 4px solid;
+  transition: 1.5s;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .susc-btn {
+    font-size: large;
+  }
+}
+
+/*ABOUT US STYLING*/
+
+#AboutUsImg {
+  width: 100%;
+  height: auto;
+  margin: 0%;
+  padding: 0%;
+}
+
+#AboutUs {
+  background-color: #000000;
+  width: 100%;
+}
+
+/*LOCATION / GOOGLE MAP STYLING*/
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:auto;
+  width:100%;
+}
+
+.mapouter{
+  position: relative
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  /*height: 500px;
+  width: 900px;*/
+  width:80%;
+  height:100%;
+  clear: both;
+}
+
+#location {
+  text-align: center;
+}
+
+/*TESTIMONIALS STYLING*/
+
+#testimonials {
+  margin-left: 0%;
+  margin-top: 2.5%;
+  background-image: linear-gradient(to right top, #a4abb5, #a5b1bc, #a4b7c2, #a4bec7, #a4c4cb);
+}
+
+#OurCustomers {
+  text-align: center;
+}
+
+.img-circle {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+/*FOOTER STYLING - HOMEPAGE*/
+
+#logoFooter {
+  float: left;
+  width: 50%;
+  height: auto;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+}
+
+#hpfooter {
+  float: left;
+  background-color: black;
+  color:whitesmoke;
+  width: 100%;
+}
+
+#hpfooter a{
+  color: whitesmoke;
+}
+
+/* Style footer icons */
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  /*width: 15px;*/
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  float: right;
+  margin: 2%;
+}
+
+/* Add a hover effect */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Setting a specific color for each brand */
+
+/* Facebook - NEED TO FIX, DOESN'T LOOK ROUND*/
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/*Instagram*/
+.fa-instagram {
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); /*ColorZilla Google Chrome Ext*/
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+#footerIcons {
+  margin-top: 2.5%;
+  /*margin-right: 0.5%;*/
+}
+
+.Button{
+  background-color: #5ce1e6;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 25%;
+  margin-right: 10%;
+}
+
+/*LOGIN PAGE STYLING*/
+#LogIn {
+  width: 100%;
+  background-image: linear-gradient(to right top, #a4abb5, #a5b1bc, #a4b7c2, #a4bec7, #a4c4cb);
+  padding: 2.5%;
+  margin: 0%;
+  text-align: center;
+}
+
+#LogInForm {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+} /*stackoverflow.com*/
+
+#Form {
+  display: block;
+  text-align: center;
+}
+
+input[type=submit] {
+  
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 4.5%;
+  width: 35%;
+}
+
+input[type=text] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 3px 6px 3px #a4c4cb;
+  border-radius: 5px;
+  border: none;
+  width: 100%; /*not working*/
+}
+
+input[type=password] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 3px 6px 3px #a4c4cb;
+  border-radius: 5px;
+  border: none;
+}
+
+input[type=email] {
+  margin-top: 5%;
+  margin-right: 5%; /*for subscription section*/
+  margin-bottom: 5%;
+  box-shadow: 3px 6px 3px #a4c4cb;
+  border-radius: 5px;
+  border: none;
+}
+
+/*#LIfooter {
+  position: absolute; css-tricks.com
+  left: 0;
+  right: 0;
+  bottom: 0;
+  float: left;
+  background-color: black;
+  color: white;
+  width: 100%;
+} not responsive*/
+
+/*#space {
+  width: 100%;
+  height:30%;
+}*/
+
+/*FORGOT PASSWORD STYLING*/
+
+#ForgotPasswordTitle {
+  width: 100%;
+  background-image: linear-gradient(to right top, #a4abb5, #a5b1bc, #a4b7c2, #a4bec7, #a4c4cb);
+  padding: 2.5%;
+  margin: 0%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+#ForgotPasswordButton {
+  margin-top: 5%;
+  border: none;
+  background-color: white;
+}
+
+#RSPasswordButton{
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 4.5%;
+  width: 70%;
+
+}
+
+#ForgotPassword{
+  display: block;
+  text-align: center;
+}
+
+#ForgotPasswordForm{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+/*ENQUIRY PAGE STYLING*/
+#Enquire {
+  width: 100%;
+  background-image: linear-gradient(to right top, #a4abb5, #a5b1bc, #a4b7c2, #a4bec7, #a4c4cb);
+  padding: 2.5%;
+  margin: 0%;
+  text-align: center;
+}
+
+/*#LogI {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}*/ /*stackoverflow.com*/
+
+#EnquiryForm {
+  display: block;
+  text-align: center;
+}
+
+input[type=submit] {
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 4.5%;
+  width: 35%;
+}
+
+input[type=text] {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  box-shadow: 3px 6px 3px #a4c4cb;
+  border-radius: 5px;
+  border: none;
+  resize: both;
+  width: 100%;
+}
+
+input[type=email] {
+  margin-top: 5%;
+  margin-right: 5%; 
+  margin-bottom: 5%;
+  box-shadow: 3px 6px 3px #a4c4cb;
+  border-radius: 5px;
+  border: none;
+}
+/*MEMBERSHIP PAGE STYLING*/
+
+#Title {
+  display: block;
+  text-align: center;
+}
+
+#memberships {
+  width: 50%;
+  height: auto;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 5%;
+  padding-top: 0;
+}
+
+#Standard {
+  display: block;
+  text-align: center;
+}
+
+#standardMem {
+  width: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+#Student {
+  display: block;
+  text-align: center;
+}
+
+#studentMem {
+  width: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+#Day {
+  display: block;
+  text-align: center;
+}
+
+#dayMem {
+  width: 50%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+#Student .btn{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-color: #3e737d;
+  color: #000;
+  /*padding: 12px 24px;*/
+  padding: 0.35em 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+}
+
+#Standard .btn{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-color: #3e737d;
+  color: #000;
+  /*padding: 12px 24px;*/
+  padding: 0.35em 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+}
+
+#Day .btn{
+  position: absolute;
+  top: 75%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  background-color: #3e737d;
+  color: #000;
+  /*padding: 12px 24px;*/
+  padding: 0.35em 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+}
+
+/*TRAININGS PAGE STYLING - RONALD*/
+
+/*buttons in line with rest of website- Laura*/
+#btnFadeOut{
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 2.5%;
+  width: 30%;
+}
+#btnFadeIn{
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 2.5%;
+  width: 30%;
+}
+.course {
+  background-color: black;
+  width: 100%;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding-top: 70px;
+}
+
+.rs-row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.course-col {
+  border: 2px solid white;
+  flex-basis: 30%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 20px 12px;
+}
+.course-col:hover {
+  background-color: white;
+  color: black;
+}
+.course-col:hover p {
+  color: black;
+}
+
+@media (max-width: 700px) {
+  .rs-row {
+    flex-direction: column;
+  }
+}
+
+.row-2 {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.row-2 img {
+  width: 90%;
+  height: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.course-2 {
+  flex-basis: 30%;
+  box-sizing: border-box;
+}
+@media (max-width: 700px) {
+  .row-2 {
+    flex-direction: column;
+  }
+}
+
+/* Box Transformation */
+.future {
+  padding: auto;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  justify-content: center;
+  align-content: center;
+}
+.future button {
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  background-color: cornflowerblue;
+  font-weight: bold;
+  color: black;
+}
+.future img {
+  width: 40%;
+  margin-left: 30%;
+}
+.future h1 {
+  color: white;
+  font-family: monospace;
+}
+
+/* Muscle Diff Text*/
+#muscletextimg {
+  width: 100%;
+  border-radius: 20px;
+}
+/*.muscleBtn {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 10px;
+}*/
+
+/*BMI PAGE STYLING - RONALD*/
+.BMI-box-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .BMI-box-img {
+    flex-direction: row;
+  }
+}
+
+#BMI-box {
+  height: 300px;
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  flex-direction: column;
+  border-radius: 10px 0;
+  overflow: hidden;
+  background: black;
+  align-items: center;
+  border-color: cyan;
+  padding: 10px;
+  border-style: solid;
+}
+
+#calculation input[type="text"] {
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+  background-color: white;
+  padding: 0px 10px;
+  border: 2px solid cyan;
+  font-size: 12px;
+}
+#calculation input[type="submit"] {
+  height: 40px;
+  width: 100px;
+  border: none;
+  background: green;
+  color: black;
+  font-weight: 900;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 20px;
+}
+#finalBMI {
+  font-size: 20px;
+  color: white;
+  font-style: italic;
+  font-weight: 900;
+  padding: 0px 10px;
+  margin-left: 100px;
+}
+#results li,
+h2 {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: auto;
+}
+.bmiimg {
+  width: 50%;
+  height: 280px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.textbmi p {
+  font-size: 20px;
+  width: 100%;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.hero {
+  display: flex;
+
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+
+.left {
+  flex: 0 0 50%;
+  margin-top: 20px;
+}
+
+.right {
+  flex: 0 0 50%;
+}
+.right img {
+  width: 90%;
+  border-radius: 5px;
+}
+
+#calculate{
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 2.5%;
+  width: 30%;
+}
+
+/* Suscribe Button */
+.modal-bg {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.suscribe-box {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  background-image: url(/Images/suscribeimg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  max-width: 600px;
+  height: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  padding: 8px;
+  color: black;
+}
+/* @media (max-width: 600px) {
+  .suscribe-box {
+  }
+} */
+.btn-close {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+}
+.btn-close:hover {
+  background-color: red;
+  cursor: pointer;
+}
+#email {
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: none;
+  color: black;
+}
+/* Suscribe Outside */
+.suscribe-section {
+  margin-bottom: 20px;
+}
+.suscribe-section button {
+  width: 50%;
+  height: 50px;
+}
+
+
+
+
+
+
+/*OLD CODE*/
+
+/*OLD NAVBAR CODE*/
+
+/*header {
+  background-color: black;
+  border-bottom: 2px solid;
+  padding-top: 5px;
+  overflow: hidden;
+}
+header a {
+  text-decoration: none;
+}
+header ul {
+  padding: 0;
+  margin: 0;
+  By Default unordered list have padding 
+}
+header li {
+  float: left;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  Horizontal Placement, and spacing between
+}
+header nav {
+  float: right;
+  margin-top: 8px;
+}*/
+
+/*.navbar navbar-inverse {
+  background-color: #000;
+}
+
+.navbar-header {
+  background-color: #000;  this worked from logo to home
+}
+
+.navbar-toggle {
+  background-color: #000;
+}
+
+.nav navbar-nav {
+  background-color: #000;
+}
+
+.nav navbar-nav navbar-right {
+  background-color: #000;
+}
+
+.collapse navbar-collapse {
+  background-color: #000;
+}
+
+#myNavBar {
+  background-color: #000; worked on remaining navbar but leaving edges 
+}*/
+
+/*OLD SUBSCRIPTION CODE*/
+/*.btnSuscribe {
+  height: 10%;
+  color: #000000;
+}*/
+
+/*.btnSuscribe {
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: .5%;
+  width: 6%;
+}*/
+
+/* New text box at beginning and subscription button*/
+/*.text-box {
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  color: whitesmoke;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  text-align: center;
+}*/
+
+/*OLD CAROUSEL STYLING*/
+/*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 100%;
+  height: auto;
+}*/
+
+/*.item img {
+  position: relative;
+  object-fit: cover; preserve for dif window sizes, stack of
+  top: 0;
+  left: 0;
+  min-height: 300px;
+}*/
+
+/*OLD MEMBERSHIP PAGE CODE*/
+
+/*#Title .btn{
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #3e737d;
+  color: #000;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+}*/
+
+/*#memberships {
+  z-index: -1;
+}*/
+
+/*OLD LOGIN CODE*/
+
+/*#PasswordButton {
+  background-color: #3e737d;
+  color: #ffffff;
+  border: none;
+  padding: 4.5%;
+  width: 80%;
+}*/
+
+
+
+

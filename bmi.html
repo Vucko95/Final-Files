@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF 8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1"> <!--w3schools, ensures the website works on all devices on screens-->
+        <meta name="description" content="Fit Flow Dublin Gym. Join us today to improve your health and fitness in a professional and friendly gym"> <!--SEO-->
+        <meta name="keywords" content="Fit Flow, Dublin, Gym, Membership, Fit, Health, Weight, Weights, Run"> <!--SEO-->
+        <title>Fit Flow BMI Calculator</title> 
+        <!--external JS and CSS--> 
+        <script type="text/javascript" src="list-builder.js"></script>
+        <link rel="stylesheet" href="external.css"> 
+        <!--Font Awesome for Social Media Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!--J Query-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse" id="navContainer" role="navigation">
+      <!--it's automatically fluid, doesn't need conteiner-->
+      <!--<div class="container-fluid" id="navContainer" role="navigation">-->
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target="#myNavBar"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <img
+          class="navbar-brand"
+          src="images/Logo3.png"
+          width="429"
+          height="182"
+          id="logo"
+        />
+      </div>
+      <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="trainings.html">Trainings</a></li>
+          <li><a href="memberships.html">Memberships</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="login.html"><span class="glyphicon glyphicon-user"></span> Login</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <h1 id="titleh1">Whats my BMI?</h1>
+    <div class="container">
+      <div class="hero">
+        <div class="left">
+          <div id="BMI-box">
+            <div id="calculation">
+              <h2>CALCULATE</h2>
+              <input
+                type="text"
+                name="bmi"
+                id="weight"
+                placeholder="Weight In KG"
+              />
+
+              <input
+                type="text"
+                name="bmi"
+                id="height"
+                placeholder="Height In CM"
+              />
+              <input type="submit" value="calculate" id="calculate" />
+              <div id="finalBMI">Your BMI Is : <span>00</span></div>
+            </div>
+            <div id="results">
+              <h2>Result Summary:</h2>
+              <ul>
+                <li>Under Weight = Less Then 18.5 BMI</li>
+                <li>Normal Weight = 18.5 To 24.9 BMI</li>
+                <li>Over Weight = 25 To 29.9 BMI</li>
+                <li>Obesity = 30 Or Greater BMI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="Images/bmi1.jpg" class="bmiimg" alt="bmi" />
+        </div>
+      </div>
+      <div class="text">
+        <p>
+          Understanding your BMI result Underweight Being underweight could be a
+          sign you're not eating enough or you may be ill. If you're
+          underweight, a GP can help. Find out more in underweight adults
+          Healthy weight Keep up the good work! For tips on maintaining a
+          healthy weight, check out the food and diet and fitness sections.
+          Overweight The best way to lose weight if you're overweight is through
+          a combination of diet and exercise. The BMI calculator will give you a
+          personal calorie allowance to help you achieve a healthy weight
+          safely. Obese The best way to lose weight if you're obese is through a
+          combination of diet and exercise, and, in some cases, medicines. See a
+          GP for help and advice.
+        </p>
+        <p>
+          Diet and weight loss programmes If you have a BMI over 30, you may be
+          referred to join a weight loss group or given exercise on
+          prescription. Weight loss groups may be commercial slimming groups or
+          those provided by the NHS. Exercise on prescription involves being
+          referred to receive a number of sessions of physical activity with a
+          health team or a qualified trainer. Your health team should provide
+          you with guidance on changing eating habits and exercising efficiently
+          to achieve the best possible benefits. Some people may be considered
+          to go on a very low calorie diet of 800kcal per day. This requires
+          medical supervision and may not be advisable in certain groups of
+          people.
+        </p>
+      </div>
+      <!--<div class="hero">
+        <div class="left">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            asperiores laborum veniam quasi. Nemo adipisci veritatis aliquid
+            sunt recusandae qui culpa! Aspernatur velit adipisci culpa explicabo
+            eum officiis tempore consequuntur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+            asperiores laborum veniam quasi. Nemo adipisci veritatis aliquid
+            sunt recusandae qui culpa! Aspernatur velit adipisci culpa explicabo
+            eum officiis tempore consequuntur.
+          </p>
+        </div>-->
+        <div class="right">
+          <img src="Images/bmi2.jpg" alt="bmi calculator" />
+        </div>
+      </div>
+    </div>
+
+     <!--Footer-->
+     <footer id="hpfooter">
+      <div class="row">
+        <div class="col-sm-3">
+          <img src="images/Logo3.PNG" width="429" height="182" id="logoFooter" />
+        </div>
+        <div class="col-sm-3">
+          <h3>ABOUT FIT FLOW</h3>
+          <ul>
+             <li><a href="enquire.html">Get In Touch</a></li>
+              <li>About Us</li>
+              <li>Find Us</li>
+              <li>Join Us</li>
+          </ul>
+        </div>
+        <div class="col-sm-3">
+          <h3>THE BORING STUFF</h3>
+          <ul>
+            <li>Terms and Conditions</li>
+            <li>Privacy Notice</li>
+            <li>Copyright</li>
+          </ul>
+        </div>
+        <!--Footer Icons-->
+        <div class="col-sm-3" id="footerIcons">
+          <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+          <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        </div>
+      </div>
+    </footer>
+    <!--<footer>
+      <div class="main-content">
+        <div class="leftt box">
+          <div class="content">
+            <img src="/Images/Logo3.PNG" alt="" />
+            <h2>About</h2>
+            <span class="text"
+              >Fit Flow offers a wide range of training methods that can fit
+              anyone, regardless of age, weight or height.</span
+            >
+            <div class="icons">
+              <i class="fa fa-amazon" style="font-size: 24px; color: white"></i>
+              <i
+                class="fa fa-facebook-square"
+                style="font-size: 24px; color: white"
+              ></i>
+              <i
+                class="fa fa-twitter-square"
+                style="font-size: 24px; color: white"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="centerr box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="text"
+                >129 S Circular Rd, Saint Catherine's, Dublin 8</span
+              >
+            </div>
+            <div class="email">
+              <span class="text"> FitFlowDublin@gmail.com</span>
+              <br />
+            </div>
+            <div class="icons">
+              <i
+                class="fa fa-map-marker"
+                style="font-size: 24px; color: white"
+              ></i>
+              <i
+                class="fa fa-envelope-o"
+                style="font-size: 24px; color: white"
+              ></i>
+            </div>
+          </div>
+        </div>
+        <div class="rightt box">
+          <h2>Useful Links</h2>
+          <ul>
+            <li>
+              <a href="https://www.examine.com/">Examine Supplement help</a>
+            </li>
+            <li>
+              <a href="https://www.myfitnesspal.com/"
+                >Track your daily calorie intake</a
+              >
+            </li>
+            <li><a href="https://www.gymshark.com/">Gym clothing</a></li>
+            <li>
+              <a href="https://www.rogueeurope.eu/">New Fitness Equipment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>-->
+  </body>
+</html>

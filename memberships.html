@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF 8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1"> <!--w3schools, ensures the website works on all devices on screens-->
+        <meta name="description" content="Fit Flow Dublin Gym. Join us today to improve your health and fitness in a professional and friendly gym"> <!--SEO-->
+        <meta name="keywords" content="Fit Flow, Dublin, Gym, Membership, Fit, Health, Weight, Weights, Run"> <!--SEO-->
+        <title>Fit Flow Memberships</title> 
+        <!--external JS and CSS--> 
+        <script type="text/javascript" src="list-builder.js"></script>
+        <link rel="stylesheet" href="external.css"> 
+        <!--Font Awesome for Social Media Icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <!--J Query / JS-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <!--using mix of semantic elements and div throughout-->
+        <!--Header / Nav Bar-->
+        <nav class="navbar navbar-inverse" id="navContainer" role="navigation"> <!--it's automatically fluid, doesn't need conteiner-->
+          <!--<div class="container-fluid" id="navContainer" role="navigation">-->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <img class="navbar-brand" src="images/Logo3.png" width="429" height="182" id="logo"/>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="trainings.html">Trainings</a></li>
+                  <li><a href="memberships.html">Memberships</a></li>
+                  <li><a href="bmi.html">BMI Calculator</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="logIn.html"><span class="glyphicon glyphicon-user"></span>    Login</a></li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+
+        <div class="container-fluid" id="Title">
+            <img src="Images/Membership.png" alt="memberships" id="memberships"/>
+        </div>
+
+        <div class="container-fluid" id="Student">
+            <img src="Images/StudentMember.png" alt="student memberships" id="studentMem"/>
+            <button class="btn enquire">Enquire Now</button>
+        </div>
+
+        <div class="container-fluid">
+          <div class="Enquire">
+              <h1>Enquire</h1>
+          </div>
+          <div class="EnquiryForm">
+          <form action="index.html" id="LogInForm" method="post" onsubmit="return log_in();"> 
+           <table>
+              <br>
+              <tr>
+                  <td>Email</td>
+              </tr>
+              <tr>
+                  <td><input type="email" name="email" id="enquireEmail" placeholder="Enter Email Address"/></td>
+              </tr>
+              <tr>
+                  <td><input type="text" name="enquiry" id="enquiry" placeholder="Please enter your enquiry here"></td>
+              </tr>
+              <tr>
+                  <td><input type="submit" value="Login"></td>  
+              </tr>
+            </table>
+          </form>
+        </div>
+        
+
+        <div class="container-fluid" id="Standard">
+            <img src="Images/StandardMember.png" alt="standard memberships" id="standardMem"/>
+            <button class="btn" onclick=document.location="shoppingCart.html">Enquire Now</button>
+        </div>
+
+        <div class="container-fluid" id="Day">
+            <img src="Images/DayPass.png" alt="day memberships" id="dayMem"/>
+            <button class="btn" onclick=document.location="shoppingCart.html">Enquire Now</button>
+        </div>
+        
+      <footer id="hpfooter">
+        <div class="row">
+            <div class="col-sm-3">
+             <img src="images/Logo3.PNG" width="429" height="182" id="logoFooter" />
+          </div>
+          <div class="col-sm-3">
+            <h3>ABOUT FIT FLOW</h3>
+              <ul>
+                <li><a href="enquire.html">Get In Touch</a></li>
+                <li>About Us</li>
+                <li>Find Us</li>
+                <li>Join Us</li>
+              </ul>
+          </div>
+          <div class="col-sm-3">
+            <h3>THE BORING STUFF</h3>
+              <ul>
+                <li>Terms and Conditions</li>
+                <li>Privacy Notice</li> 
+                <li>Copyright</li>
+              </ul>
+          </div>
+          <!--Footer Icons-->
+          <div class="col-sm-3" id="footerIcons">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+          </div>
+        </div>
+      </footer>
+
+    </body>
+
+</html>
