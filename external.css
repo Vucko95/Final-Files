@@ -580,6 +580,9 @@ input[type="email"] {
   border: none;
   padding: 2.5%;
   width: 30%;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
 }
 #btnFadeIn {
   background-color: #3e737d;
@@ -587,6 +590,8 @@ input[type="email"] {
   border: none;
   padding: 2.5%;
   width: 30%;
+  display: block;
+  margin: auto;
 }
 .course {
   background-color: black;
@@ -601,7 +606,6 @@ input[type="email"] {
 .rs-row {
   margin-top: 5%;
   display: flex;
-
   justify-content: space-between;
 }
 .course-col {
@@ -620,7 +624,9 @@ input[type="email"] {
 .course-col:hover p {
   color: black;
 }
-
+.course-col:hover h3 {
+  color: black;
+}
 @media (max-width: 700px) {
   .rs-row {
     flex-direction: column;
@@ -631,7 +637,7 @@ input[type="email"] {
   margin-top: 5%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 .row-2 img {
   width: 90%;
@@ -677,8 +683,27 @@ input[type="email"] {
 
 /* Muscle Diff Text*/
 #muscletextimg {
-  width: 100%;
+  width: 80%;
   border-radius: 20px;
+  /* margin-left: 100px;
+  margin-bottom: 20px; */
+  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#muscletextimg:hover {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.muscletext {
+  margin-top: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+.muscletext p:hover {
+  margin-top: 20px;
+  font-family: "Courier New", Courier, monospace;
+  color: green;
 }
 /*.muscleBtn {
   display: flex;
