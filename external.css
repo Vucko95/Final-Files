@@ -130,9 +130,10 @@ p {
   transition: 1.5s;
   text-decoration: none;
 }
-@media (max-width: 800px) {
-  .susc-btn {
-    font-size: large;
+@media (max-width: 600px) {
+  .modal-btn button {
+    width: 80%;
+    font-size:10px;
   }
 }
 
@@ -459,6 +460,7 @@ input[type="email"] {
   padding: 2.5%;
   margin: 0%;
   text-align: center;
+  
 }
 
 /*#LogI {
@@ -949,7 +951,7 @@ h2 {
   margin-bottom: 20px;
 }
 .suscribe-section button {
-  width: 20%;
+  width: 30%;
   height: 50px;
   background: orangered;
   border-radius: 50px;
@@ -961,7 +963,7 @@ h2 {
 .suscribe-section button:hover {
   background: yellow;
 }
-
+media 
 /*OLD CODE*/
 
 /*OLD NAVBAR CODE*/
