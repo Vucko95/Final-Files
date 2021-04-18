@@ -1,31 +1,32 @@
-
-
 /*LAURA*/
-/* Log In Validation */ 
-function log_in(){
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value; 
+/* Log In Validation */
+function log_in() {
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
 
-    if (username=="" || password=="" || password.length <9 || password.length >9){
-        alert('You must enter username and 9 character password');
-        return false;                       //this specifies that there must be input into both username and password, and password must be a length of 9 characters
-    }
-    else{
-        return true;
-    }
+  if (
+    username == "" ||
+    password == "" ||
+    password.length < 9 ||
+    password.length > 9
+  ) {
+    alert("You must enter username and 9 character password");
+    return false; //this specifies that there must be input into both username and password, and password must be a length of 9 characters
+  } else {
+    return true;
+  }
 }
 
-/* Forgot Password Validation - not working */ 
-function forgot_password(){
-    var email = document.getElementById('email').value;
+/* Forgot Password Validation - not working */
+function forgot_password() {
+  var email = document.getElementById("email").value;
 
-    if (email=="" || email.length <10){
-        alert('You must enter a valid email address');
-        return false;                       //this specifies that there must be input into the email address field
-    }
-    else{
-        return true;
-    }
+  if (email == "" || email.length < 10) {
+    alert("You must enter a valid email address");
+    return false; //this specifies that there must be input into the email address field
+  } else {
+    return true;
+  }
 }
 
 /*Laura old / not working code*/
@@ -127,5 +128,3 @@ calculate.addEventListener("click", () => {
     yourBMI.innerHTML = `Please Enter Correct Value`;
   }
 });
-
-

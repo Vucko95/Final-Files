@@ -98,14 +98,8 @@ p {
 /*SUBSCRIPTION STYLING - RONALD*/
 
 #Subscribtion {
-  background-image: linear-gradient(
-    to right top,
-    #a4abb5,
-    #a5b1bc,
-    #a4b7c2,
-    #a4bec7,
-    #a4c4cb
-  );
+  background: black;
+
   color: #ffffff;
   padding-bottom: 2.5%;
   padding-top: 1.5%;
@@ -146,6 +140,7 @@ p {
 
 #AboutUsImg {
   width: 100%;
+  position: relative;
   height: auto;
   margin: 0%;
   padding: 0%;
@@ -870,6 +865,7 @@ h2 {
 
 /* Suscribe Button */
 .modal-bg {
+  z-index: 1999999998;
   position: fixed;
   width: 100%;
   height: 100vh;
@@ -953,8 +949,17 @@ h2 {
   margin-bottom: 20px;
 }
 .suscribe-section button {
-  width: 50%;
+  width: 20%;
   height: 50px;
+  background: orangered;
+  border-radius: 50px;
+  color: black;
+  font-weight: 900;
+  font-family: monospace;
+  font-size: 15px;
+}
+.suscribe-section button:hover {
+  background: yellow;
 }
 
 /*OLD CODE*/
