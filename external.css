@@ -207,14 +207,41 @@ p {
 }
 
 /*FOOTER STYLING - HOMEPAGE*/
+/* .row {
+  display: flex;
+}
+.col-sm-3 {
+  flex-basis: 50%;
+  width: 30%;
+  padding: 1px 1px;
+  margin-top: 5px;
+  margin-left: 10px;
+} */
+@media screen and (max-width: 600px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .row {
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+  }
+  #logoFooter {
+    height: 30%;
+  }
+  .col-sm-3 {
+    margin-left: 50px;
+  }
+  #footerIcons {
+    margin-right: 90px;
+  }
+}
 
 #logoFooter {
-  float: left;
-  width: 50%;
-  height: auto;
-  margin-top: 10%;
-  margin-bottom: 0%;
-  margin-left: 0%;
+  width: 200px;
+  height: 100px;
+  margin-left: 60px;
 }
 
 #hpfooter {
@@ -227,7 +254,17 @@ p {
 #hpfooter a {
   color: whitesmoke;
 }
-
+/* @media screen and (max-width: 600px) {
+  footer {
+    position: relative;
+    bottom: 0px;
+  }
+  .row {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-weight: bold;
+  } */
 /* Style footer icons */
 .fa {
   padding: 10px;
@@ -278,6 +315,7 @@ ul {
 
 #footerIcons {
   margin-top: 2.5%;
+
   /*margin-right: 0.5%;*/
 }
 
@@ -720,7 +758,9 @@ input[type="email"] {
   display: flex;
   flex-direction: column;
 }
-
+#titleh1 {
+  text-align: center;
+}
 @media only screen and (min-width: 768px) {
   .BMI-box-img {
     flex-direction: row;
