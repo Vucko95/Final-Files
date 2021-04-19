@@ -21,7 +21,7 @@ h6 {
 }
 
 p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
   color: white;
 }
@@ -133,7 +133,7 @@ p {
 @media (max-width: 600px) {
   .modal-btn button {
     width: 80%;
-    font-size:10px;
+    font-size: 10px;
   }
 }
 
@@ -202,17 +202,6 @@ p {
   margin-left: 20%;
 }
 
-/*FOOTER STYLING - HOMEPAGE*/
-/* .row {
-  display: flex;
-}
-.col-sm-3 {
-  flex-basis: 50%;
-  width: 30%;
-  padding: 1px 1px;
-  margin-top: 5px;
-  margin-left: 10px;
-} */
 @media screen and (max-width: 600px) {
   footer {
     position: relative;
@@ -233,6 +222,10 @@ p {
     margin-right: 90px;
   }
 }
+.col-sm-3 {
+  align-items: center;
+  text-align: center;
+}
 
 #logoFooter {
   width: 200px;
@@ -250,18 +243,7 @@ p {
 #hpfooter a {
   color: whitesmoke;
 }
-/* @media screen and (max-width: 600px) {
-  footer {
-    position: relative;
-    bottom: 0px;
-  }
-  .row {
-    width: 100%;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-weight: bold;
-  } */
-/* Style footer icons */
+
 .fa {
   padding: 10px;
   font-size: 30px;
@@ -278,9 +260,6 @@ p {
   opacity: 0.7;
 }
 
-/* Setting a specific color for each brand */
-
-/* Facebook - NEED TO FIX, DOESN'T LOOK ROUND*/
 .fa-facebook {
   background: #3b5998;
   color: white;
@@ -307,6 +286,7 @@ p {
 
 ul {
   list-style: none;
+  /* margin-right: 50px; */
 }
 
 #footerIcons {
@@ -386,24 +366,6 @@ input[type="email"] {
   border: none;
 }
 
-/*#LIfooter {
-  position: absolute; css-tricks.com
-  left: 0;
-  right: 0;
-  bottom: 0;
-  float: left;
-  background-color: black;
-  color: white;
-  width: 100%;
-} not responsive*/
-
-/*#space {
-  width: 100%;
-  height:30%;
-}*/
-
-/*FORGOT PASSWORD STYLING*/
-
 #ForgotPasswordTitle {
   width: 100%;
   background-image: linear-gradient(
@@ -460,15 +422,7 @@ input[type="email"] {
   padding: 2.5%;
   margin: 0%;
   text-align: center;
-  
 }
-
-/*#LogI {
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}*/ /*stackoverflow.com*/
 
 #EnquiryForm {
   display: block;
@@ -610,7 +564,7 @@ input[type="email"] {
 
 /*buttons in line with rest of website- Laura*/
 #btnFadeOut {
-  background-color: #3e737d;
+  background-color: orangered;
   color: #ffffff;
   border: none;
   padding: 2.5%;
@@ -620,7 +574,7 @@ input[type="email"] {
   margin-top: 10px;
 }
 #btnFadeIn {
-  background-color: #3e737d;
+  background-color: orangered;
   color: #ffffff;
   border: none;
   padding: 2.5%;
@@ -637,7 +591,15 @@ input[type="email"] {
   padding-top: 70px;
   border-radius: 10px;
 }
-
+#trainingh1 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+#trainingh1:hover {
+  color: #4caf50;
+}
 .rs-row {
   margin-top: 5%;
   display: flex;
@@ -666,6 +628,12 @@ input[type="email"] {
   .rs-row {
     flex-direction: column;
   }
+  #btnFadeOut {
+    width: 80%;
+  }
+  #btnFadeIn {
+    width: 80%;
+  }
 }
 
 .row-2 {
@@ -690,7 +658,7 @@ input[type="email"] {
   }
 }
 
-/* Box Transformation */
+/* Box Transformation Ronald */
 .future {
   padding: auto;
   margin: auto;
@@ -713,10 +681,10 @@ input[type="email"] {
 }
 .future h1 {
   color: white;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Muscle Diff Text*/
+/* Muscle Diff Text Roanld */
 #muscletextimg {
   width: 80%;
   border-radius: 20px;
@@ -733,21 +701,13 @@ input[type="email"] {
 }
 .muscletext {
   margin-top: 20px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .muscletext p:hover {
   margin-top: 20px;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   color: green;
 }
-/*.muscleBtn {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  margin-bottom: 20px;
-  padding: 10px;
-  border-radius: 10px;
-}*/
 
 /*BMI PAGE STYLING - RONALD*/
 .BMI-box-img {
@@ -812,7 +772,7 @@ h2 {
   text-decoration: none;
   list-style-type: none;
   color: white;
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: auto;
 }
@@ -865,7 +825,7 @@ h2 {
   width: 30%;
 }
 
-/* Suscribe Button */
+/* Suscribe Button Ronald */
 .modal-bg {
   z-index: 1999999998;
   position: fixed;
@@ -887,7 +847,7 @@ h2 {
 }
 
 .suscribe-box {
-  font-family: "Courier New", Courier, monospace;
+  font-family: Arial, Helvetica, sans-serif;
   position: relative;
   background-image: url(/Images/suscribeimg.jpg);
   background-position: center;
@@ -919,12 +879,9 @@ h2 {
   padding: 8px;
   color: black;
 }
-/* @media (max-width: 600px) {
-  .suscribe-box {
-  }
-} */
+
 .btn-close {
-  background-color: #4caf50; /* Green */
+  background-color: #4caf50;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -946,7 +903,7 @@ h2 {
   border: none;
   color: black;
 }
-/* Suscribe Outside */
+/* Suscribe Newsletter  Ronald */
 .suscribe-section {
   margin-bottom: 20px;
 }
@@ -957,138 +914,9 @@ h2 {
   border-radius: 50px;
   color: black;
   font-weight: 900;
-  font-family: monospace;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 .suscribe-section button:hover {
   background: yellow;
 }
-media 
-/*OLD CODE*/
-
-/*OLD NAVBAR CODE*/
-
-/*header {
-  background-color: black;
-  border-bottom: 2px solid;
-  padding-top: 5px;
-  overflow: hidden;
-}
-header a {
-  text-decoration: none;
-}
-header ul {
-  padding: 0;
-  margin: 0;
-  By Default unordered list have padding 
-}
-header li {
-  float: left;
-  display: inline;
-  padding-left: 10px;
-  padding-right: 10px;
-  Horizontal Placement, and spacing between
-}
-header nav {
-  float: right;
-  margin-top: 8px;
-}*/
-
-/*.navbar navbar-inverse {
-  background-color: #000;
-}
-
-.navbar-header {
-  background-color: #000;  this worked from logo to home
-}
-
-.navbar-toggle {
-  background-color: #000;
-}
-
-.nav navbar-nav {
-  background-color: #000;
-}
-
-.nav navbar-nav navbar-right {
-  background-color: #000;
-}
-
-.collapse navbar-collapse {
-  background-color: #000;
-}
-
-#myNavBar {
-  background-color: #000; worked on remaining navbar but leaving edges 
-}*/
-
-/*OLD SUBSCRIPTION CODE*/
-/*.btnSuscribe {
-  height: 10%;
-  color: #000000;
-}*/
-
-/*.btnSuscribe {
-  background-color: #3e737d;
-  color: #ffffff;
-  border: none;
-  padding: .5%;
-  width: 6%;
-}*/
-
-/* New text box at beginning and subscription button*/
-/*.text-box {
-  width: 100%;
-  height: 600px;
-  position: absolute;
-  color: whitesmoke;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-  text-align: center;
-}*/
-
-/*OLD CAROUSEL STYLING*/
-/*.carousel-inner > .item > img, .carousel-inner > .item > a > img {
-  width: 100%;
-  height: auto;
-}*/
-
-/*.item img {
-  position: relative;
-  object-fit: cover; preserve for dif window sizes, stack of
-  top: 0;
-  left: 0;
-  min-height: 300px;
-}*/
-
-/*OLD MEMBERSHIP PAGE CODE*/
-
-/*#Title .btn{
-  position: absolute;
-  top: 75%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #3e737d;
-  color: #000;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  color: #ffffff;
-  border: none;
-}*/
-
-/*#memberships {
-  z-index: -1;
-}*/
-
-/*OLD LOGIN CODE*/
-
-/*#PasswordButton {
-  background-color: #3e737d;
-  color: #ffffff;
-  border: none;
-  padding: 4.5%;
-  width: 80%;
-}*/
